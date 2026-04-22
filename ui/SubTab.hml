@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hml>
+    <meta>
+        <project name="SubTab" appId="com.honeygui.rotary" resolution="480X480" minSdk="API 2: HoneyGUI V1.1.0" pixelMode="ARGB8888" />
+        <author name="Anonymous" />
+    </meta>
+    <view>
+        <hg_view id="SubTabMainView" x="-69" y="-70" width="480" height="480" backgroundColor="#000000" entry="true" zIndex="0">
+            <events>
+                <event type="onClick">
+                    <action type="switchView" target="RotaryTemplateMainView" switchOutStyle="SWITCH_OUT_TO_LEFT_USE_TRANSLATION" switchInStyle="SWITCH_IN_FROM_RIGHT_USE_TRANSLATION" />
+                </event>
+            </events>
+            <hg_list id="list_1" x="0" y="0" width="480" height="480" itemWidth="480" itemHeight="96" space="5" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="5" offset="0" outScope="0" autoAlign="true" inertia="true" loop="false" createBar="false" enableAreaDisplay="false" keepNoteAlive="false" showOverflow="true" zIndex="1" showOverflow="true">
+                <hg_list_item id="list_1_item_0" x="0" y="0" width="480" height="96" index="0" zIndex="0">
+                    <hg_window id="win_4" x="81" y="64" width="251" height="164" showBackground="false" backgroundColor="#808080" enableBlur="false" blurDegree="225" zIndex="0" />
+                    <hg_image id="img_5" x="200" y="23" width="50" height="50" src="assets/home_14.png" zIndex="2" />
+                </hg_list_item>
+                <hg_list_item id="list_1_item_1" x="0" y="101" width="480" height="96" index="1" zIndex="1">
+                    <hg_window id="win_5" x="26" y="-2" width="100" height="100" showBackground="false" backgroundColor="#808080" enableBlur="false" blurDegree="225" zIndex="1" />
+                    <hg_image id="img_4" x="342" y="23" width="50" height="50" src="assets/home_14.png" zIndex="2" />
+                    <hg_image id="img_35" x="81" y="20" width="50" height="50" src="assets/home_14.png" zIndex="2" />
+                </hg_list_item>
+                <hg_list_item id="list_1_item_2" x="0" y="202" width="480" height="96" index="2" zIndex="2">
+                    <hg_button id="btn_5" x="95" y="0" width="33" height="67" text="Button" toggleMode="true" initialState="on" imageOn="assets/ac/ac_temp_b.png" imageOff="assets/ac/ac_speed_b.png" zIndex="4" />
+                </hg_list_item>
+                <hg_list_item id="list_1_item_3" x="0" y="303" width="480" height="96" index="3" zIndex="3" />
+                <hg_list_item id="list_1_item_4" x="0" y="404" width="480" height="96" index="4" zIndex="4" />
+            </hg_list>
+        </hg_view>
+        <hg_view id="view_1" x="725" y="145" width="480" height="480" backgroundColor="#000000" borderRadius="20" padding="12" overflow="auto" entry="false" zIndex="1">
+            <hg_image id="img_72" x="189" y="175" width="81" height="114" src="assets/ac/num_9.png" highQuality="true" zIndex="1" />
+            <hg_image id="img_73" x="62" y="210" width="81" height="114" src="assets/ac/num_9.png" highQuality="true" zIndex="1" />
+            <hg_image id="img_74" x="243" y="89" width="60" height="60" src="assets/home_1222.png" zIndex="2" />
+        </hg_view>
+        <hg_view id="view_2" x="1245" y="145" width="480" height="480" backgroundColor="#000000" entry="false" zIndex="2">
+        </hg_view>
+    </view>
+</hml>

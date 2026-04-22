@@ -1,4 +1,6 @@
 {
+  "$schema": "HoneyGUI",
+  "type": "Designer",
   "name": "RotaryTemplate",
   "appId": "com.honeygui.rotary",
   "version": "1.0.0",
@@ -9,5 +11,16 @@
   "pixelMode": "ARGB8888",
   "mainHmlFile": "ui/RotaryMain.hml",
   "template": "rotary",
-  "created": "2025-12-11"
+  "created": "2025-12-11",
+  "alwaysConvert": {
+    "images": [
+      "ac/ac_cold.png",
+      "ac/ac_fan.png",
+      "ac/ac_heat.png",
+      "ac/ac_fresh.png"
+    ],
+    "videos": [],
+    "models": [],
+    "fonts": []
+  }
 }

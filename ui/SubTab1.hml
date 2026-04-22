@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hml>
+    <meta>
+        <project name="SubTab" appId="com.honeygui.rotary" resolution="480X480" minSdk="API 2: HoneyGUI V1.1.0" pixelMode="ARGB8888" />
+        <author name="Anonymous" />
+    </meta>
+    <view>
+        <hg_view id="SubTabMain1View" x="-69" y="-70" width="480" height="480" backgroundColor="#000000" entry="true" zIndex="0">
+            <events>
+                <event type="onClick">
+                    <action type="switchView" target="RotaryTemplateMainView" switchOutStyle="SWITCH_OUT_TO_LEFT_USE_TRANSLATION" switchInStyle="SWITCH_IN_FROM_RIGHT_USE_TRANSLATION" />
+                </event>
+            </events>
+            <hg_image id="img_76" x="156" y="290" width="50" height="50" src="assets/home_12.png" zIndex="2" />
+            <hg_image id="img_77" x="331" y="347" width="60" height="60" src="assets/home_15.png" zIndex="3" />
+        </hg_view>
+    </view>
+</hml>

@@ -1,0 +1,146 @@
+{
+  "version": "1.0",
+  "defaultSettings": {
+    "format": "adaptive16",
+    "compression": "adaptive",
+    "dither": false,
+    "videoFormat": "MJPEG",
+    "videoQuality": 5
+  },
+  "items": {
+    "ac/ac_mode.png": {
+      "format": "ARGB8565"
+    },
+    "ac/ac_cold.png": {
+      "format": "RGB888",
+      "compression": "rle"
+    },
+    "ac/ac_fan.png": {
+      "format": "ARGB8565",
+      "compression": "rle"
+    },
+    "ac/ac_heat.png": {
+      "format": "RGB888",
+      "compression": "rle",
+      "dither": false
+    },
+    "ac": {
+      "format": "ARGB8888",
+      "compression": "rle"
+    },
+    "ac/ac_mod.png": {
+      "format": "ARGB8888",
+      "compression": "inherit"
+    },
+    "home_21.png": {
+      "format": "RGB888",
+      "compression": "jpeg",
+      "jpegParams": {
+        "sampling": "JPEG420",
+        "quality": 5,
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "home_7.png": {
+      "format": "ARGB8565",
+      "compression": "rle",
+      "dither": false
+    },
+    "home_6.png": {
+      "format": "ARGB8565",
+      "compression": "rle"
+    },
+    "home_5.png": {
+      "compression": "rle",
+      "format": "ARGB8565"
+    },
+    "home_8.png": {
+      "compression": "rle"
+    },
+    "curtain": {
+      "compression": "rle",
+      "format": "ARGB8565"
+    },
+    "light": {
+      "compression": "rle",
+      "format": "ARGB8565",
+      "dither": true
+    },
+    "mode": {
+      "compression": "rle",
+      "format": "RGB565"
+    },
+    "setting": {
+      "compression": "rle"
+    },
+    "home_10.png": {
+      "compression": "rle"
+    },
+    "home_12.png": {
+      "compression": "rle"
+    },
+    "home_13.png": {
+      "compression": "rle"
+    },
+    "home_14.png": {
+      "compression": "rle"
+    },
+    "home_15.png": {
+      "compression": "rle"
+    },
+    "home_16.png": {
+      "compression": "rle"
+    },
+    "home_17.png": {
+      "compression": "rle"
+    },
+    "home_18.png": {
+      "compression": "rle"
+    },
+    "home_4.png": {
+      "compression": "rle"
+    },
+    "home_9.png": {
+      "compression": "rle"
+    },
+    "mode/md_home_txt.png": {
+      "format": "RGB565"
+    },
+    "ac/ac_mode_mix.png": {
+      "format": "ARGB8888",
+      "compression": "inherit"
+    },
+    "ac/ac_fresh.png": {
+      "format": "RGB888"
+    },
+    "light/led_temp.png": {
+      "format": "ARGB8565"
+    },
+    "light/led_color.png": {
+      "format": "ARGB8565"
+    },
+    "mode/md_select.png": {
+      "format": "ARGB8565"
+    }
+  },
+  "alwaysConvert": {
+    "images": [
+      "ac/ac_cold.png",
+      "ac/ac_fan.png",
+      "ac/ac_heat.png",
+      "ac/ac_fresh.png",
+      "light/led_ani/**",
+      "light/color_1.png"
+    ],
+    "videos": [
+      "light/led_ani/**"
+    ],
+    "models": [
+      "light/led_ani/**"
+    ],
+    "fonts": [
+      "light/led_ani/**"
+    ]
+  },
+  "smartPacking": false
+}
