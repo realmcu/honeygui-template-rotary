@@ -332,8 +332,8 @@ void ac_btn_1_click_cb(void *obj, gui_event_t *e)
     {
         if(ac_tab_temp_fan == false)
         {
-            uint8_t lst_index = gui_list_get_current_note(lst_unit);
-            uint8_t ten_index = gui_list_get_current_note(lst_ten);
+            uint8_t lst_index = gui_list_get_current_note_index(lst_unit);
+            uint8_t ten_index = gui_list_get_current_note_index(lst_ten);
             gui_log("lst_index get %d %d\n", lst_ten, lst_index);
             lst_index--;
             lst_index = (lst_index > 200)?9:lst_index;
@@ -352,7 +352,7 @@ void ac_btn_1_click_cb(void *obj, gui_event_t *e)
         }
         else
         {
-            uint8_t lst_index = gui_list_get_current_note(lst_fan);
+            uint8_t lst_index = gui_list_get_current_note_index(lst_fan);
             gui_log("lst_index get %d\n", lst_fan);
             lst_index--;
             lst_index = (lst_index > 200)?0:lst_index;
@@ -381,8 +381,8 @@ void ac_btn_2_click_cb(void *obj, gui_event_t *e)
     {
         if(ac_tab_temp_fan == false)
         {
-            uint8_t lst_index =  gui_list_get_current_note(lst_unit);
-            uint8_t ten_index = gui_list_get_current_note(lst_ten);
+            uint8_t lst_index =  gui_list_get_current_note_index(lst_unit);
+            uint8_t ten_index = gui_list_get_current_note_index(lst_ten);
             gui_log("lst_index get %d\n", lst_index);
             lst_index++;
             lst_index = (lst_index >= 10)?0:lst_index;
@@ -402,7 +402,7 @@ void ac_btn_2_click_cb(void *obj, gui_event_t *e)
         }
         else
         {
-            uint8_t lst_index = gui_list_get_current_note(lst_fan);
+            uint8_t lst_index = gui_list_get_current_note_index(lst_fan);
             gui_log("lst_index get %d\n", lst_fan);
             lst_index++;
             lst_index = (lst_index > 4)?4:lst_index;
@@ -575,14 +575,14 @@ void light_tmp_btn_1_click_cb(void *obj, gui_event_t *e)
 
     if(light_mod == LIGHT_STATUS_TEMP)
     {
-        uint8_t index =  gui_list_get_current_note(list_bar_temp);
+        uint8_t index =  gui_list_get_current_note_index(list_bar_temp);
         index++;
         index = (index >= 23)? 23 : index;
         gui_list_scroll_to_note(list_bar_temp, index);
     }
     else if(light_mod == LIGHT_STATUS_LIGHTNING)
     {
-        uint8_t index =  gui_list_get_current_note(lst_lt_bar_0);
+        uint8_t index =  gui_list_get_current_note_index(lst_lt_bar_0);
         index++;
         index = (index >= 23)? 23 : index;
         gui_list_scroll_to_note(lst_lt_bar_0, index);
@@ -597,14 +597,14 @@ void light_tmp_btn_2_click_cb(void *obj, gui_event_t *e)
 
     if(light_mod == LIGHT_STATUS_TEMP)
     {
-        uint8_t index =  gui_list_get_current_note(list_bar_temp);
+        uint8_t index =  gui_list_get_current_note_index(list_bar_temp);
         index--;
         index = (index >= 200)? 0 : index;
         gui_list_scroll_to_note(list_bar_temp, index);
     }
     else if(light_mod == LIGHT_STATUS_LIGHTNING)
     {
-        uint8_t index =  gui_list_get_current_note(lst_lt_bar_0);
+        uint8_t index =  gui_list_get_current_note_index(lst_lt_bar_0);
         index--;
         index = (index >= 200)? 0 : index;
         gui_list_scroll_to_note(lst_lt_bar_0, index);
@@ -803,14 +803,14 @@ void light_clr_btn_1_click_cb(void *obj, gui_event_t *e)
 
     if(light_clr_mod == LIGHT_STATUS_COLOR)
     {
-        uint8_t index =  gui_list_get_current_note(list_bar_clr);
+        uint8_t index =  gui_list_get_current_note_index(list_bar_clr);
         index++;
         index = (index >= 23)? 23 : index;
         gui_list_scroll_to_note(list_bar_clr, index);
     }
     else if(light_clr_mod == LIGHT_STATUS_LIGHTNING)
     {
-        uint8_t index =  gui_list_get_current_note(lst_lt_bar_1);
+        uint8_t index =  gui_list_get_current_note_index(lst_lt_bar_1);
         index++;
         index = (index >= 23)? 23 : index;
         gui_list_scroll_to_note(lst_lt_bar_1, index);
@@ -825,14 +825,14 @@ void light_clr_btn_2_click_cb(void *obj, gui_event_t *e)
 
     if(light_clr_mod == LIGHT_STATUS_COLOR)
     {
-        uint8_t index =  gui_list_get_current_note(list_bar_clr);
+        uint8_t index =  gui_list_get_current_note_index(list_bar_clr);
         index--;
         index = (index >= 200)? 0 : index;
         gui_list_scroll_to_note(list_bar_clr, index);
     }
     else if(light_clr_mod == LIGHT_STATUS_LIGHTNING)
     {
-        uint8_t index =  gui_list_get_current_note(lst_lt_bar_1);
+        uint8_t index =  gui_list_get_current_note_index(lst_lt_bar_1);
         index--;
         index = (index >= 200)? 0 : index;
         gui_list_scroll_to_note(lst_lt_bar_1, index);
