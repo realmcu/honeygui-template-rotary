@@ -1956,7 +1956,7 @@ extern void light_clr_update_light(void);
 void win_temp_timer_0_cb_impl(void)
 {
     extern uint8_t light_tmp_idx;
-    uint8_t index =  gui_list_get_current_note(list_bar_temp);
+    uint8_t index =  gui_list_get_current_note_index(list_bar_temp);
     if(light_tmp_idx != index)
     {
         // gui_log("win_temp_timer_0_cb_impl %d\n", index);
@@ -1969,7 +1969,7 @@ void win_temp_timer_0_cb_impl(void)
 void win_lgtn_timer_0_cb_impl(void)
 {
     extern uint8_t light_ltn_idx_0;
-    uint8_t index =  gui_list_get_current_note(lst_lt_bar_0);
+    uint8_t index =  gui_list_get_current_note_index(lst_lt_bar_0);
 
     // gui_log("win_lgtn_timer_0_cb_impl");
     if(light_ltn_idx_0 != index)
@@ -1997,7 +1997,7 @@ void win_lgtn_timer_0_cb_impl(void)
 void win_clr_timer_0_cb_impl(void)
 {
     extern uint8_t light_clr_idx;
-    uint8_t index =  gui_list_get_current_note(list_bar_clr);
+    uint8_t index =  gui_list_get_current_note_index(list_bar_clr);
     if(light_clr_idx != index)
     {
         // gui_log("win_temp_timer_0_cb_impl %d\n", index);
@@ -2010,7 +2010,7 @@ void win_clr_timer_0_cb_impl(void)
 void win_clr_lgtn_timer_0_cb_impl(void)
 {
     extern uint8_t light_ltn_idx_1;
-    uint8_t index =  gui_list_get_current_note(lst_lt_bar_1);
+    uint8_t index =  gui_list_get_current_note_index(lst_lt_bar_1);
 
     // gui_log("win_lgtn_timer_0_cb_impl");
     if(light_ltn_idx_1 != index)
